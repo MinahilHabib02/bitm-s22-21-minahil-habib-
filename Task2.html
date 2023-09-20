@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+function checkEvenOdd() {
+const number = parseInt(document.getElementById('number-input').value);
+const resultElement = document.getElementById('result');
+
+if (number % 2 === 0) {
+resultElement.innerText = `${number} is an even number`;
+} else {
+resultElement.innerText = `${number} is an odd number`;
+}
+}
+
+function checkPrime() {
+const number = parseInt(document.getElementById('number-input').value);
+const resultElement = document.getElementById('result');
+
+let isPrime = true;
+if (number === 1) {
+isPrime = false;
+} else if (number > 1) {
+for (let i = 2; i < number; i++) {
+if (number % i === 0) {
+isPrime = false;
+break;
+}
+}
+}
+
+if (isPrime) {
+resultElement.innerText = `${number} is a prime number`;
+} else {
+resultElement.innerText = `${number} is not a prime number`;
+}
+}
+</body>
+</html>

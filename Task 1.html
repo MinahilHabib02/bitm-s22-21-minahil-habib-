@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculater</title>
+</head>
+<body>
+    <form id="gpa-form">
+        <label for="subject1">Subject 1:</label>
+        <input type="text" id="subject1" />
+        <input type="number" id="grade1" min="0" max="100" />
+        
+        <label for="subject2">Subject 2:</label>
+        <input type="text" id="subject2" />
+        <input type="number" id="grade2" min="0" max="100" />
+        
+        <label for="subject3">Subject 3:</label>
+        <input type="text" id="subject3" />
+        <input type="number" id="grade3" min="0" max="100" />
+        
+        <label for="subject4">Subject 4:</label>
+        <input type="text" id="subject4" />
+        <input type="number" id="grade4" min="0" max="100" />
+        
+        <label for="subject5">Subject 5:</label>
+        <input type="text" id="subject5" />
+        <input type="number" id="grade5" min="0" max="100" />
+        
+        <button type="button" onclick="calculateGPA()">Calculate GPA</button>
+        </form>
+        
+        <p id="result"></p>
+</body>
+</html>
